@@ -27,7 +27,6 @@ public final class SecurityClassLoad {
 
     public static void securityClassLoad(ClassLoader loader) throws Exception {
 
-
         if( System.getSecurityManager() == null ){
             return;
         }
