@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
  Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -43,6 +43,10 @@
     <init-param>
       <param-name>debug</param-name>
       <param-value>2</param-value>
+    </init-param>
+    <init-param>
+      <param-name>fileEncoding</param-name>
+      <param-value>UTF-8</param-value>
     </init-param>
     <!-- Uncomment this to show proxy sessions from the Backup manager or a
          StoreManager in the sessions list for an application
@@ -191,6 +195,11 @@
     </description>
     <role-name>manager-status</role-name>
   </security-role>
+
+    <mime-mapping>
+        <extension>htm</extension>
+        <mime-type>text/html;charset=UTF-8</mime-type>
+    </mime-mapping>
 
   <error-page>
     <error-code>401</error-code>

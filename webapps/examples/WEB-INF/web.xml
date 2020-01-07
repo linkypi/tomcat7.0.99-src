@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -232,7 +232,7 @@
             <display-name>JSPConfiguration</display-name>
             <url-pattern>/jsp/jsp2/misc/config.jsp</url-pattern>
             <el-ignored>true</el-ignored>
-            <page-encoding>ISO-8859-1</page-encoding>
+            <page-encoding>UTF-8</page-encoding>
             <scripting-invalid>true</scripting-invalid>
             <include-prelude>/jsp/jsp2/misc/prelude.jspf</include-prelude>
             <include-coda>/jsp/jsp2/misc/coda.jspf</include-coda>

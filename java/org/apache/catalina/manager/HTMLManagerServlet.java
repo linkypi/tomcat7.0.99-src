@@ -120,6 +120,7 @@ public final class HTMLManagerServlet extends ManagerServlet {
 
         // Prepare our output writer to generate the response message
         response.setContentType("text/html; charset=" + Constants.CHARSET);
+        response.setCharacterEncoding("UTF-8");
 
         String message = "";
         // Process the requested command

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <%--
  Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -15,7 +15,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 --%>
-<%@page session="false" contentType="text/html; charset=ISO-8859-1" %>
+<%@page session="false" contentType="text/html; charset=UTF-8" %>
 <%@page import="java.util.Collection" %>
 <%@page import="java.util.Iterator" %>
 <%@page import="org.apache.catalina.manager.JspHelper" %>
@@ -37,7 +37,7 @@
    Collection activeSessions = (Collection) request.getAttribute("activeSessions");
 %>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" pageEncoding="UTF-8"/>
     <meta http-equiv="pragma" content="no-cache"/><!-- HTTP 1.0 -->
     <meta http-equiv="cache-control" content="no-cache,must-revalidate"/><!-- HTTP 1.1 -->
     <meta http-equiv="expires" content="0"/><!-- 0 is an invalid value and should be treated as 'now' -->
