@@ -93,4 +93,4 @@ hs_err_pid*
 conf/Catalina/
 target/classes/META-INF/
 target/generated-sources/
-webapps.bak/
+!webapps.bak/
