@@ -91,6 +91,6 @@ buildNumber.properties
 hs_err_pid*
 
 conf/Catalina/
-target/classes/META-INF/
-target/generated-sources/
+target/
 !webapps.bak/
+mynote/.drawio-chrome/chrome-data/

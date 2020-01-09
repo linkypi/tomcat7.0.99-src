@@ -20,7 +20,6 @@ package org.apache.catalina.util;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Properties;
 
