@@ -47,6 +47,7 @@ webapps/docs/jdbc-pool.xml
 ### Example user template template
 ### Example user template
 
+
 # IntelliJ project files
 .idea
 *.iml
@@ -94,3 +95,10 @@ conf/Catalina/
 target/
 !webapps.bak/
 mynote/.drawio-chrome/chrome-data/
+examples/sci.demo/.gradle/
+examples/sci.demo/build/generated/
+examples/sci.demo/build/resources/
+examples/sci.demo/build/tmp/
+examples/simple.servlet/.gradle/
+examples/simple.servlet/build/
+webapps/springmvc/META-INF/

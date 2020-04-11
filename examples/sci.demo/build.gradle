@@ -6,7 +6,6 @@ apply plugin:'java'
 apply plugin: 'war'
 group 'com.lynch'
 version '1.0-SNAPSHOT'
-
 sourceCompatibility = 1.8
 
 repositories {

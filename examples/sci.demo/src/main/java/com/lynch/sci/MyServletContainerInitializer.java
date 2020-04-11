@@ -17,40 +17,40 @@ public class MyServletContainerInitializer implements ServletContainerInitialize
 
     @Override
     public void onStartup(Set<Class<?>> arg0, ServletContext ctx) throws ServletException {
-        for (Class<?> klass : arg0) {
-            System.out.println(klass);
-
-            if(klass.equals(HelloService.class)){
-                try {
-                   Method method = klass.getDeclaredMethod("say",new Class<?>[]{});
-                   method.invoke(klass.newInstance(),new Object[]{});
-                } catch (NoSuchMethodException e) {
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                } catch (InstantiationException e) {
-                    e.printStackTrace();
-                } catch (InvocationTargetException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            if(klass.equals(CalcService.class)){
-                try {
-                    Method method = klass.getDeclaredMethod("add",int.class, int.class);
-                    int result =  (int)method.invoke(klass.newInstance(),12,40);
-                    System.out.println("calc result: "+ result);
-                } catch (NoSuchMethodException e) {
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                } catch (InstantiationException e) {
-                    e.printStackTrace();
-                } catch (InvocationTargetException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
+//        for (Class<?> klass : arg0) {
+//            System.out.println(klass);
+//
+//            if(klass.equals(HelloService.class)){
+//                try {
+//                   Method method = klass.getDeclaredMethod("say",new Class<?>[]{});
+//                   method.invoke(klass.newInstance(),new Object[]{});
+//                } catch (NoSuchMethodException e) {
+//                    e.printStackTrace();
+//                } catch (IllegalAccessException e) {
+//                    e.printStackTrace();
+//                } catch (InstantiationException e) {
+//                    e.printStackTrace();
+//                } catch (InvocationTargetException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//
+//            if(klass.equals(CalcService.class)){
+//                try {
+//                    Method method = klass.getDeclaredMethod("add",int.class, int.class);
+//                    int result =  (int)method.invoke(klass.newInstance(),12,40);
+//                    System.out.println("calc result: "+ result);
+//                } catch (NoSuchMethodException e) {
+//                    e.printStackTrace();
+//                } catch (IllegalAccessException e) {
+//                    e.printStackTrace();
+//                } catch (InstantiationException e) {
+//                    e.printStackTrace();
+//                } catch (InvocationTargetException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }
 
         //注册组件  ServletRegistration
         ServletRegistration.Dynamic servlet = ctx.addServlet("userServlet", new UserServlet());
